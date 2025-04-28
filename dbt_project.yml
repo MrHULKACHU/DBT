@@ -39,6 +39,10 @@ models:
   miniproject:
 
     marts:
+      fundamentals:
+        database: PC_DBT_DB
+        schema: DBT_AJ_1
+        +materialized: table
       gold:
         database: MINI_PROJ
         schema: GOLD
@@ -54,4 +58,8 @@ models:
         database: MINI_PROJ
         schema: SILVER
         +materialized: view
-
+      
+      fundamentals:
+        database: PC_DBT_DB
+        schema: DBT_AJ_1
+        +materialized: view

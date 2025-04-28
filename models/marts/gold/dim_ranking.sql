@@ -1,4 +1,3 @@
-{{ config(materialized='table') }}
 
 with sales as (
     select
@@ -19,8 +18,8 @@ previous_week as (
 )
 
 select
-    STORE,
     WEEK_DATE,
+    STORE,
     TOTAL_WEEKLY_SALES,
     rank() over (order by TOTAL_WEEKLY_SALES desc) as SALES_RANK,
     PREVIOUS_WEEK_SALES,

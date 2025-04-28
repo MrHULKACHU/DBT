@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_sales
+    description: Staging model for sales data
+    columns:
+      - name: STORE_ID
+        tests:
+          - not_null
+
+      - name: DEPARTMENT_ID
+        tests:
+          - not_null
+     
+      - name: WEEK_DATE
+        tests:
+          - not_null
+     
+      - name: IS_HOLIDAY_WEEK
+        tests:
+          - accepted_values:
+              values:
+                - TRUE
+                - FALSE

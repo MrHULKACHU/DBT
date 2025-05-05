@@ -1,4 +1,3 @@
--- models/silver/silver_feature.sql
 
 SELECT
     store_id,

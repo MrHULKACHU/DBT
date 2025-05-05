@@ -1,4 +1,4 @@
--- models/staging/stg_stores.sql
+-- models/staging/silver/stg_stores.sql
 
 SELECT
     store AS store_id,

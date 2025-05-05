@@ -1,7 +1,5 @@
 
 
--- models/silver/silver_sales.sql
-
 SELECT
     store_id,
     department_id,

@@ -53,7 +53,9 @@ models:
         schema: SILVER
         +materialized: table
     
+    
     staging:
+    
       silver:
         database: MINI_PROJ
         schema: SILVER
@@ -63,3 +65,5 @@ models:
         database: PC_DBT_DB
         schema: DBT_AJ_1
         +materialized: view
+
+

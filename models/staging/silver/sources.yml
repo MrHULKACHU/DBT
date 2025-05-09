@@ -1,9 +1,9 @@
 sources:
-  - name: miniproj  # match this with SQL
-    database: MINI_PROJ  # must be in all caps to match Snowflake
+  - name: miniproj  
+    database: MINI_PROJ  
     schema: BRONZE
     tables:
-      - name: SALES_DATA_SET  # must match Snowflake exactly if not quoted
+      - name: SALES_DATA_SET  
       - name: FEATURE_DATA_SET
       - name: STORES_DATA_SET
 

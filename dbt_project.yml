@@ -65,5 +65,11 @@ models:
         database: PC_DBT_DB
         schema: DBT_AJ_1
         +materialized: view
+      
+      ipl:
+        database: PC_DBT_DB
+        schema: DBT_AJ_1
+        +materialized: view
+
 
 

@@ -37,12 +37,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   PUB:
-    database: DBT_DEMO
-    schema: PUB
+    +database: DBT_DEMO
+    +schema: PUB
     +materialized: table 
 
   WRK:
-    database: DBT_DEMO
-    schema: WRK
-    materialized: view
+    +database: DBT_DEMO
+    +schema: WRK
+    +materialized: view
     

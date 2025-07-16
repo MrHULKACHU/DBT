@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_sales
+  - name: wrk_sales
     description: Staging model for sales data
     columns:
       - name: STORE_ID

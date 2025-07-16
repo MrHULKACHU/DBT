@@ -36,40 +36,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  miniproject:
+  PUB:
+    database: MINI_PROJ
+    schema: GOLD
+    +materialized: table 
 
-    marts:
-      fundamentals:
-        database: PC_DBT_DB
-        schema: DBT_AJ_1
-        +materialized: table
-      gold:
-        database: MINI_PROJ
-        schema: GOLD
-        +materialized: table
-
-      silver:
-        database: MINI_PROJ
-        schema: SILVER
-        +materialized: table
+  WRK:
+    database: MINI_PROJ
+    schema: SILVER
+    materialized: view
     
-    
-    staging:
-    
-      silver:
-        database: MINI_PROJ
-        schema: SILVER
-        +materialized: view
-      
-      fundamentals:
-        database: PC_DBT_DB
-        schema: DBT_AJ_1
-        +materialized: view
-      
-      ipl:
-        database: PC_DBT_DB
-        schema: DBT_AJ_1
-        +materialized: view
-
-
-

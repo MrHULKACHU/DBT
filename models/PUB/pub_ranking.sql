@@ -4,7 +4,7 @@ with sales as (
         Store_ID as STORE,
         WEEK_DATE,
         SUM(TOTAL_WEEKLY_SALES) as TOTAL_WEEKLY_SALES
-    from {{ ref('stg_sales') }}
+    from {{ ref('wrk_sales') }}
     group by Store_ID, WEEK_DATE
 ),
 

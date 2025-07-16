@@ -6,6 +6,7 @@ SELECT
     MAX(IS_HOLIDAY_WEEK) AS IS_HOLIDAY_WEEK
 FROM {{ ref('silver_sales') }}
 GROUP BY Store_ID, WEEK_DATE
+order by Store_ID
 
 
 

@@ -1,9 +1,8 @@
-sources:
-  - name: miniproj  
-    database: MINI_PROJ  
-    schema: BRONZE
+sources:  
+  - name: dbt_demo
+    database: dbt_demo
+    schema: raw
     tables:
-      - name: SALES_DATA_SET  
-      - name: FEATURE_DATA_SET
-      - name: STORES_DATA_SET
+      - name: customer
+      - name: orders
 

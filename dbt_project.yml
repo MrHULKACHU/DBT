@@ -37,12 +37,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_demo:
-    PUB:
-      +database: DBT_DEMO
-      +schema: PUB
-      +materialized: table 
-
     WRK:
-      +database: DBT_DEMO
       +schema: WRK
       +materialized: view
+    PUB:
+      +schema: PUB
+      +materialized: table

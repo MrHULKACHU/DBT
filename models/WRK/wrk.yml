@@ -1,0 +1,10 @@
+models:
+   ###wrk Model Test###
+  - name: wrk_customers_v
+    description: Customer Data
+    columns:
+      - name: customer_id
+        description: customer id, should be unique and not null
+        tests:
+          - unique
+          - not_null

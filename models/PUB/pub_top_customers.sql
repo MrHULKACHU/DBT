@@ -1,3 +1,5 @@
+--Ranking the customers based on their count of orders
+
 SELECT
   c.customer_id,
   c.customer_name,

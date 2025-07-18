@@ -5,4 +5,3 @@ sources:
     tables:
       - name: customer
       - name: orders
-

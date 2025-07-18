@@ -1,5 +1,3 @@
---Ranking the customers based on their count of orders
-
 SELECT
   c.customer_id,
   c.customer_name,
@@ -12,4 +10,3 @@ GROUP BY
   c.customer_id,
   c.customer_name
   ORDER BY customer_rank
-

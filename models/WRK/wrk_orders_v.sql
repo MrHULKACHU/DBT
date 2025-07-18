@@ -4,4 +4,4 @@ SELECT
   o_orderstatus AS status,
   o_orderdate AS order_date,
   o_comment AS comments
-FROM {{ source('dbt_demo', 'orders') }}
+FROM dbt_demo.raw.orders

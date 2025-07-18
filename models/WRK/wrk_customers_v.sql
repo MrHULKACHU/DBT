@@ -7,4 +7,4 @@ SELECT
   c_acctbal AS account_balance,
   c_mktsegment AS market_segment,
   c_comment AS comments
-FROM {{ source('dbt_demo', 'customer') }}
+FROM dbt_demo.raw.customer

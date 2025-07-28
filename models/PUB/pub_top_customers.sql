@@ -11,3 +11,4 @@ GROUP BY
   c.customer_name
   ORDER BY customer_rank
 
+--new comment
